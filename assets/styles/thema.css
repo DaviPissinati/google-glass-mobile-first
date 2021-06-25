@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'fontelogo';
+    src: url(../fonts/bubblegum-sans-regular.otf);
+}
+
+:root {
+    --escuro:#606060;
+    --claro:#cecece;
+    --preto:black;
+    --branco:#ffffff;
+    --cor-primaria:rgb(35, 137, 195);
+    --cinza:#888888;
+    --cinza-claro:#dddddd;
+    /* --:; */
+}
+
+
+
+/* config fonts */
+
+h1{
+    font-family: 'fontelogo', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-family: 'fontelogo', sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+.font-escura{
+    color: var(--escuro) ;
+}
+
+.font-clara {
+    color: var(--claro);
+}
+
+.font-preta{
+    color: var(--preto);
+}
+
+.font-branca{
+    color: var(--branco);
+}
+
+.font-cinza{
+    color: var(--cinza);
+}
+
+.form-txt{
+    text-indent: 50px;
+    margin-top: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-r{
+    text-align: right;
+}
+
+.text-l{
+    text-align: left;
+}
+
+
+
+/*    */
+
+
+.container-full{
+    font-family: arial, sans-serif;
+    background-color: var(--cor-primaria);
+    }
+
+div.container{
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+/* cabeçalho */
+
+header.cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: auto;
+}
+
+.side-bar{
+    display: none;
+}
+
+
+/* lateralE */
+
+header.cabecalho h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 60%);
+}
+
+header.cabecalho h2 {
+    font-size: 20px;
+}
+
+header div.lateralE img{
+    width: 200px;
+    height: 50px;
+}
+
+header nav.nav{
+    margin: 10px;
+}
+
+header button{
+    margin-left: 10px;
+    padding: 10px;
+}
+
+
+/* lateralD */
+
+header div.row{
+    justify-content: center;
+}
+
+header nav.nav{
+    flex-direction: column;
+}
+
+.btn{
+    margin-left: 0px;
+}
+
+header div.card.img{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header div.lateralD img{
+    width: 200px;
+    height: 121px;
+}
+/* conteudo  */
+
+section.conteudo{
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+
+/* lateralE */
+section div.lateralE h1{
+    font-size: 30px;
+}
+
+section div.lateralE h2{
+    font-size: 20px;
+}
+section div.lateralE h3{
+    font-size: 12px;
+}
+
+div.card.cinza{
+    background-color: var(--cinza-claro);
+    padding: 5px;
+}
+
+div.card.cinza h2{
+    margin-bottom: 0px;
+}
+
+section div.lateralD div.card.img{
+    position: relative;
+    padding: 10px;
+    z-index: 0;
+}
+section div.lateralD div.card.img:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+div.card.info-img{
+    position: absolute;
+    color: var(--branco);
+    background-color: transparent;
+}
+
+div.card.tabela{
+    background-color: var(--cinza);
+    height: 425px;
+}
+
+/* lateralD */
+
+section div.lateralD h1{
+    font-size: 30px;
+}
+section div.lateralD h2{
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+section div.lateralD{
+    height: auto;
+    background-color: var(--cinza-claro);
+    padding: 10px;
+}
+
+section div.card.cinza-escuro{
+    background-color: var(--escuro);
+    padding: 5px;
+}
+
+/* rodape */
+
+footer.rodape{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-top: 1px #606060 solid ;
+    bottom: 0;
+}
+
+
+
+
+@media only screen and (min-width:769px) {
+   
+     /* cabecalho */
+    
+    /* lateralD */
+    
+    header nav.nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .side-bar{
+        display: block;
+    } 
+
+    /* conteudo */
+
+
+    /* rodape */
+}
