@@ -22,14 +22,17 @@
 
 h1{
     font-family: 'fontelogo', sans-serif;
+    font-size: 30px;
 }
 
 h2{
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 h3{
     font-family: 'fontelogo', sans-serif;
+    font-size: 12px;
 }
 
 p{
